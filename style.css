@@ -1,0 +1,166 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  margin: 0;
+}
+.box1 {
+  height: 100%;
+  width: 30%;
+  display: block;
+}
+.box2 {
+  height: 100%;
+  width: 40%;
+}
+.box3 {
+  height: calc(100% / 3);
+  width: 100%;
+}
+
+.box4 {
+  height: 0%;
+  width: 0%;
+  display: flex;
+}
+
+.box5 {
+  height: 100%;
+  width: 50%;
+  display: block;
+}
+
+.box6 {
+  height: calc(100% / 3);
+  width: 100%;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.rem {
+  max-height: 0%;
+  max-width: 0%;
+}
+
+.cc {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.invis {
+  opacity: 0;
+}
+.transparent {
+  opacity: 0.5;
+}
+.purple {
+  background-color: #523d64;
+}
+.green {
+  background-color: #85e21f;
+}
+.orange {
+  background-color: #da6339;
+}
+.gold {
+  background-color: #d3a047;
+}
+.yellow {
+  background-color: #ffeca7;
+}
+.black {
+  background-color: #000000;
+}
+.slate {
+  background-color: #1e171f;
+}
+.dark-grey {
+  background-color: #3a3b3c;
+}
+.light-grey {
+  background-color: #d3d3d3;
+}
+
+.clickable {
+  filter: brightness(100%);
+  transform: scale(1.2);
+}
+
+.clickable:hover {
+  cursor: pointer;
+  filter: brightness(150%);
+  transform: scale(1.25);
+}
+
+.mainclick {
+  transform: scale(1.1);
+}
+
+.mainclick:hover {
+  cursor: pointer;
+}
+
+.clickable:active {
+  transform: scale(1.18);
+  filter: brightness(85%);
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    display: block;
+  }
+  .box1 {
+    height: 0%;
+    width: 0%;
+  }
+  .box2 {
+    height: 60%;
+    width: 100%;
+  }
+  .box4 {
+    height: 40%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    display: block;
+  }
+  .box1 {
+    height: 25%;
+    width: 100%;
+    display: flex;
+  }
+  .box2 {
+    height: 50%;
+    width: 100%;
+  }
+  .box3 {
+    height: 100%;
+    width: 33.5%;
+  }
+  .box4 {
+    height: 0%;
+    width: 0%;
+  }
+
+  .clickable {
+    filter: brightness(100%);
+    transform: scale(1);
+  }
+
+  .clickable:hover {
+    cursor: pointer;
+    filter: brightness(150%);
+    transform: scale(1.02);
+  }
+
+  .clickable:active {
+    transform: scale(0.98);
+    filter: brightness(85%);
+  }
+}
